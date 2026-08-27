@@ -23,6 +23,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Add consultation form links
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace('<a href="#contact" class="btn btn-primary"><span class="fa">رزرو مشاوره</span><span class="en">Book Consultation</span></a>', '<a href="request.html" class="btn btn-primary"><span class="fa">درخواست مشاوره</span><span class="en">Request Consultation</span></a>')
+          s = s.replace('<a class="btn btn-gold" href="mailto:info@GVHorizon.com?subject=Executive%20Consultation"><span class="fa">رزرو مشاوره اجرایی</span><span class="en">Book an Executive Consultation</span></a>', '<a class="btn btn-gold" href="request.html"><span class="fa">ارسال درخواست مشاوره</span><span class="en">Submit Consultation Request</span></a>')
+          s = s.replace('<a class="btn btn-gold" href="mailto:info@GVHorizon.com?subject=Oman%20Corporate%20Services"><span class="fa">ایمیل</span><span class="en">Email Us</span></a>', '<a class="btn btn-gold" href="request.html"><span class="fa">فرم درخواست</span><span class="en">Request Form</span></a><a class="btn btn-outline" href="mailto:info@GVHorizon.com?subject=Oman%20Corporate%20Services"><span class="fa">ایمیل</span><span class="en">Email Us</span></a>')
+          p.write_text(s, encoding='utf-8')
+          PY
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
