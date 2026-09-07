@@ -1,8 +1,11 @@
+# Publishes the reviewed website branch to GitHub Pages.
 name: Deploy static site to Pages
 
 on:
   push:
-    branches: ["codex/site-usability-refresh"]
+    branches: ["main"]
+    paths:
+      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
@@ -11,8 +14,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -21,14 +24,19 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check out website branch
         uses: actions/checkout@v4
-      - name: Setup Pages
+        with:
+          ref: codex/site-usability-refresh
+
+      - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Upload artifact
+
+      - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
