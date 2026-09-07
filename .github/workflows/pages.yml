@@ -1,3 +1,4 @@
+# Publishes the reviewed website branch to GitHub Pages.
 name: Deploy static site to Pages
 
 on:
