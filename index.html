@@ -9,48 +9,391 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
-<style>
-:root{--navy:#15385f;--navy2:#0d2947;--gold:#b98d3b;--teal:#2aa59b;--ink:#243142;--muted:#697586;--line:#e7ebef;--soft:#f5f7f8;--white:#fff;--r:20px;--shadow:0 18px 48px rgba(13,41,71,.10)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Vazirmatn',Tahoma,sans-serif;color:var(--ink);line-height:1.9;background:#fff}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92vw);margin:auto}.en{display:none}html[data-lang="en"]{direction:ltr}html[data-lang="en"] body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.62}html[data-lang="en"] .fa{display:none}html[data-lang="en"] .en{display:initial}html[data-lang="en"] .hero h1,html[data-lang="en"] .section h2{font-family:'Cormorant Garamond',Georgia,serif}.top{background:var(--navy2);color:#dbe5ef;font-size:.9rem}.top .wrap{display:flex;justify-content:space-between;gap:20px;padding:8px 0;flex-wrap:wrap}.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(21,56,95,.08)}.nav .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 0}.brand{display:flex;align-items:center;gap:12px}.logo{width:42px;height:42px;border:2px solid var(--gold);border-radius:12px;position:relative;flex:0 0 auto}.logo:after{content:"GVH";position:absolute;inset:0;display:grid;place-items:center;color:var(--navy);font-weight:900;font-size:.8rem;letter-spacing:.08em}.brand strong{display:block;color:var(--navy);letter-spacing:.04em}.brand small{color:var(--muted);display:block;font-size:.72rem}.menu{display:flex;align-items:center;gap:16px;font-size:.92rem}.menu a:hover{color:var(--teal)}.lang-switch{display:flex;gap:6px;padding:4px;border:1px solid var(--line);border-radius:999px;background:#fff}.lang-switch button{border:0;background:transparent;padding:7px 10px;border-radius:999px;font-family:inherit;font-weight:800;color:var(--muted);cursor:pointer}.lang-switch button.active{background:var(--navy);color:#fff}.btn{display:inline-flex;justify-content:center;align-items:center;padding:12px 18px;border-radius:999px;font-weight:800;border:1px solid transparent;transition:.2s}.btn-primary{background:var(--navy);color:#fff}.btn-gold{background:var(--gold);color:#fff}.btn-outline{border-color:#ccd6df;background:#fff;color:var(--navy)}.hero{padding:88px 0 76px;background:linear-gradient(135deg,#f7f9fb 0%,#fff 62%);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;inset-inline-end:-150px;top:-130px;background:radial-gradient(circle,rgba(42,165,155,.15),rgba(42,165,155,0) 68%)}.stripe{height:13px;display:grid;grid-template-columns:62% 22% 16%;margin-bottom:35px}.stripe i:nth-child(1){background:var(--navy)}.stripe i:nth-child(2){background:var(--gold)}.stripe i:nth-child(3){background:var(--teal)}.hero-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:50px;align-items:center}.eyebrow{font-size:.78rem;color:var(--teal);font-weight:900;letter-spacing:.07em}.hero h1,.section h2{color:var(--navy);letter-spacing:-.02em}.hero h1{font-size:clamp(2.35rem,4.3vw,3.75rem);line-height:1.28;margin:.35rem 0 1.2rem;font-weight:900}.hero p{font-size:1.13rem;color:var(--muted);max-width:760px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-card{background:var(--navy2);color:#fff;border-radius:var(--r);padding:34px;box-shadow:var(--shadow)}.hero-card h3{font-size:1.62rem;margin:.4rem 0;font-weight:800}.hero-card p{font-size:.98rem;color:#d5e0eb}.facts{display:grid;gap:0;margin-top:22px}.facts div{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-top:1px solid rgba(255,255,255,.14)}.section{padding:80px 0}.section.alt{background:var(--soft)}.section h2{font-size:clamp(1.9rem,3vw,2.7rem);line-height:1.4;margin:.4rem 0 1rem;font-weight:900}.lead{color:var(--muted);font-size:1.06rem;max-width:830px}.about-grid{display:grid;grid-template-columns:1.45fr .55fr;gap:36px;align-items:start;margin-top:30px}.about-copy{font-size:1.02rem;color:var(--muted)}.about-copy p{margin:0 0 18px}.about-copy strong{color:var(--ink)}.about-side{display:grid;gap:16px}.about-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:22px;box-shadow:0 10px 30px rgba(13,41,71,.04)}.about-card h3{color:var(--navy);margin:0 0 8px;font-size:1.12rem}.about-card p{margin:0;color:var(--muted);font-size:.94rem}.values{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.values span{background:rgba(42,165,155,.10);color:#176c66;padding:6px 10px;border-radius:999px;font-size:.82rem;font-weight:700}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px}.card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:24px;box-shadow:0 10px 30px rgba(13,41,71,.04)}.num{color:var(--gold);font-size:.78rem;font-weight:900}.card h3{color:var(--navy);margin:.45rem 0 .55rem;font-size:1.08rem}.card p{color:var(--muted);font-size:.94rem}.packages{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}.package{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}.package.featured{border:2px solid var(--gold);box-shadow:var(--shadow);transform:translateY(-8px)}.tag{display:inline-block;background:rgba(185,141,59,.13);color:#8a6625;padding:5px 10px;border-radius:999px;font-size:.73rem;font-weight:900}.package h3{color:var(--navy);font-size:1.25rem}.price{color:var(--navy);font-size:2rem;margin:.3rem 0;font-weight:900}.package ul{padding-inline-start:19px;color:var(--muted)}.package li{margin:.46rem 0}.compare{overflow:auto;margin-top:30px;border:1px solid var(--line);border-radius:16px;background:#fff}.compare table{border-collapse:collapse;width:100%;min-width:850px}.compare th{background:var(--navy);color:#fff;padding:15px}.compare td{padding:14px;border-bottom:1px solid var(--line)}.compare tr:nth-child(even) td{background:#fafbfc}.fee-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:34px}.fee-box{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}.fee-box h3{margin:0;padding:16px 20px;background:var(--navy);color:#fff}.fee-row{display:grid;grid-template-columns:1.4fr .7fr;gap:14px;padding:13px 18px;border-bottom:1px solid var(--line)}.fee-row strong{color:var(--navy)}.terms{display:grid;gap:12px;margin-top:28px}.term{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}.cta{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;border-radius:24px;padding:48px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}.cta h2{color:#fff;margin:0 0 10px}.cta p{margin:0;color:#d9e3ee}.footer{background:#0a2239;color:#cbd7e2;padding:42px 0}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.footer strong,.footer a{color:#fff}.footnote{margin-top:28px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);font-size:.88rem;color:#93a5b7}@media(min-width:961px){html[data-lang="fa"] .hero h1{font-size:clamp(2.25rem,3.2vw,3rem);white-space:nowrap}html[data-lang="fa"] .hero h1 br{display:none}html[data-lang="fa"] .section h2{font-size:clamp(1.75rem,2.35vw,2.25rem);white-space:nowrap}}@media(max-width:960px){.menu>a:not(.btn){display:none}.hero-grid,.cta,.footer-grid,.about-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.packages{grid-template-columns:1fr}.package.featured{transform:none}.fee-grid{grid-template-columns:1fr}}@media(max-width:680px){.cards{grid-template-columns:1fr}.hero{padding-top:58px}.hero h1{font-size:2.65rem}.section{padding:62px 0}.section h2{font-size:1.95rem}.cta{padding:30px}.fee-row{grid-template-columns:1fr}.brand small{display:none}.top .wrap{font-size:.82rem}.menu{gap:8px}.menu .btn{display:none}.lang-switch button{padding:6px 8px}}
-
-:root{--muted:#536172;--teal:#187c74;--gold:#89651f}html{scroll-padding-top:110px}body{overflow-wrap:break-word}*,*:before,*:after{box-sizing:border-box}[hidden]{display:none!important}:focus-visible{outline:3px solid #187c74;outline-offset:4px}a,button,input,select,summary{touch-action:manipulation}button,.btn{min-height:44px}button{font:inherit}input,select,textarea{min-width:0;font-size:1rem}input[type=email],input[type=tel],a[href^="mailto:"],a[href^="tel:"],.price{direction:ltr;unicode-bidi:isolate}.brand{min-width:0}.brand strong{overflow-wrap:anywhere}.brand small{font-size:.875rem}.nav .wrap{gap:12px}.lang-switch button,.lang button{font-size:.875rem;min-height:44px}.section h2,.hero h1{white-space:normal!important}.card{display:flex;flex-direction:column}.card .service-link{margin-top:auto;padding:12px 0;color:#15385f;text-decoration:underline;font-weight:700}.menu-toggle{display:none;border:1px solid #ccd6df;border-radius:10px;background:white;color:#15385f;padding:8px 12px}.compare{max-width:100%;overflow:auto}.skip-link{position:fixed;top:-100px;left:10px;z-index:100;background:white;padding:12px}.skip-link:focus{top:10px}summary{cursor:pointer;color:#15385f;padding:12px 0;font-weight:700}.fields{min-width:0}.grid>*{min-width:0}.optional-fields{margin-top:20px}.optional-fields .fields{padding-top:14px}.contact a{color:inherit}.formbox{order:0}.info{order:1}.submit{background:#89651f}.field-error{color:#9a3029;font-size:.9rem}.top .wrap>span{overflow-wrap:anywhere}.fee-row>*{min-width:0}
-@media(max-width:1100px){.nav .wrap{flex-wrap:wrap}.menu-toggle{display:block}.menu{display:none;width:100%;flex-direction:column;align-items:stretch;padding:12px 0}.menu.open{display:flex}.menu>a:not(.btn){display:block}.menu .btn{display:flex}.menu>a{padding:10px}.menu .lang-switch{align-self:flex-start}.brand strong{font-size:.9rem}.nav .wrap>.lang{margin-inline-start:auto}}
-@media(max-width:680px){.brand{gap:7px}.brand strong{font-size:.8rem}.logo{width:34px;height:34px}.hero h1{font-size:2rem}.nav .wrap{gap:8px}.hero-card{padding:24px}.wrap{width:92%}.facts div{flex-wrap:wrap}.section h2{font-size:1.8rem}.formbox,.info{padding:20px}.formbox{order:0}.info{order:1}.top{font-size:.875rem}}
-
-
-.hero{padding:40px 0 44px}.hero-grid{grid-template-columns:minmax(0,1fr);gap:0}.hero-grid>div{max-width:850px}.hero .stripe{margin-bottom:24px}.hero h1{margin:.35rem 0 .8rem}.hero p{margin:0;max-width:760px}.hero .actions{margin-top:22px}
-@media(max-width:680px){.hero{padding:26px 0 30px}.hero .stripe{margin-bottom:20px}.hero p{font-size:1rem}.hero .actions{margin-top:20px}}
-
-.packages{align-items:stretch;gap:24px}.package{display:flex;flex-direction:column;min-width:0;border:1px solid #d8e1e9;border-top:4px solid var(--gold);background:#fff;transform:none;padding:28px;border-radius:20px}.package h3{font-size:2rem;margin:0;color:var(--navy)}.package header{min-height:240px}.package .name-meaning{min-height:26px;font-size:.875rem;color:var(--muted)}.package .package-descriptor{font-weight:800;color:var(--navy);font-size:1rem;line-height:1.6;min-height:52px;margin:8px 0}.package .package-audience{font-size:1rem;color:var(--muted);line-height:1.7;margin:0}.package .price{font-size:2rem;margin-top:16px}.package-duration{font-size:1rem;color:var(--navy);font-weight:700;min-height:50px}.package>ul{flex:1}.package li{font-size:1rem}.package-details{border-top:1px solid var(--line);margin:12px 0 20px}.package-details summary,.package-comparison summary{min-height:44px;font-size:1rem}.package-cta{width:100%;font-size:1rem}.package-progression{color:var(--navy);margin:24px 0;font-size:1rem}.package-comparison{margin-top:26px;border:1px solid var(--line);border-radius:16px;padding:12px 20px}.package-comparison .compare{margin-top:12px}.compare table{min-width:620px}.compare caption{text-align:start;font-weight:700;padding:12px}.compare th,.compare td{font-size:1rem}.package-details[open] summary{margin-bottom:10px}@media(max-width:960px){.packages{grid-template-columns:1fr}.package header{min-height:0}.package .package-descriptor,.package-duration{min-height:0}.package .name-meaning:empty{display:none}.package{transform:none}}
-.consultation-cta,.package-cta{background:var(--teal);border-color:var(--teal);color:#fff;box-shadow:0 8px 20px rgba(24,124,116,.22);transition:background-color .2s ease,border-color .2s ease,box-shadow .2s ease,transform .2s ease}.consultation-cta:hover,.package-cta:hover,.menu a.consultation-cta:hover{background:#116b64;border-color:#116b64;color:#fff;box-shadow:0 10px 24px rgba(17,107,100,.28);transform:translateY(-1px)}.consultation-cta:active,.package-cta:active,.menu a.consultation-cta:active{background:#0d5954;border-color:#0d5954;color:#fff;box-shadow:0 4px 12px rgba(13,89,84,.24);transform:translateY(0)}.consultation-cta:focus-visible,.package-cta:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-</style>
+<link rel="stylesheet" href="assets/index.css">
+<link rel="stylesheet" href="assets/shared.css">
+<link rel="stylesheet" href="assets/polish.css">
 </head>
 <body><a class="skip-link" href="#main-content"><span class="fa">رفتن به محتوا</span><span class="en">Skip to content</span></a>
-<div class="top"><div class="wrap"><span><span class="fa">مسقط · سلطنت عمان</span><span class="en">Muscat · Sultanate of Oman</span></span><span>Al Mouj, Muscat · info@GVHorizon.com · +968 93881823</span></div></div>
-<nav class="nav"><div class="wrap"><a href="#top" class="brand"><span class="logo"></span><span><strong>GULF VISION HORIZON</strong><small><span class="fa">مشاوره ممتاز شرکتی · مسقط، عمان</span><span class="en">Premium Corporate Advisory · Muscat, Oman</span></small></span></a><button class="menu-toggle" type="button" aria-controls="main-menu" aria-expanded="false"><span class="fa">منو</span><span class="en">Menu</span></button><div class="menu" id="main-menu"><a href="#about"><span class="fa">درباره ما</span><span class="en">About</span></a><a href="#services"><span class="fa">خدمات</span><span class="en">Services</span></a><a href="#packages"><span class="fa">پکیج‌ها</span><span class="en">Packages</span></a><a href="#fees"><span class="fa">تعرفه‌ها</span><span class="en">Fees</span></a><a href="#growth"><span class="fa">ورود به بازار</span><span class="en">Market Entry</span></a><a href="#contact"><span class="fa">تماس</span><span class="en">Contact</span></a><div class="lang-switch"><button id="faBtn" class="active" onclick="setLang('fa')">فارسی</button><button id="enBtn" onclick="setLang('en')">English</button></div><a href="request.html" class="btn btn-primary consultation-cta"><span class="fa">درخواست مشاوره</span><span class="en">Request a Consultation</span></a></div></div></nav>
-<main id="main-content"><header class="hero" id="top"><div class="wrap"><div class="stripe"><i></i><i></i><i></i></div><div class="hero-grid"><div><div class="eyebrow"><span class="fa">خدمات شرکتی و سرمایه‌گذاری عمان</span><span class="en">Oman Corporate & Investment Services</span></div><h1><span class="fa">دروازه حرفه‌ای شما<br>برای ورود به عمان</span><span class="en">Executive Gateway<br>to Oman</span></h1><p><span class="fa">تیم ما در عمان مستقر است و به شرکت‌ها، سرمایه‌گذاران و مدیران ایرانی در ثبت شرکت، امور شرکتی و ورود به بازار عمان کمک می‌کند.</span><span class="en">Based in Oman, we help international companies, investors and entrepreneurs with company formation, corporate advisory and entry into the Omani market.</span></p><div class="actions"><a class="btn btn-primary consultation-cta" href="request.html"><span class="fa">درخواست مشاوره</span><span class="en">Request a Consultation</span></a><a class="btn btn-outline" target="_blank" rel="noopener" href="https://wa.me/96893881823">WhatsApp</a></div></div></div></div></header>
+<div class="top">
+<div class="wrap"><span><span class="fa">مسقط · سلطنت عمان</span><span class="en">Muscat · Sultanate of Oman</span></span><span>Al Mouj, Muscat · info@GVHorizon.com · +968 93881823</span>
+</div>
+</div>
+<nav class="nav" aria-label="Main navigation">
+<div class="wrap"><a href="#top" class="brand"><span class="logo"></span><span><strong>GULF VISION HORIZON</strong><small><span class="fa">مشاوره ممتاز شرکتی · مسقط، عمان</span><span class="en">Premium Corporate Advisory · Muscat, Oman</span></small></span></a><button class="menu-toggle" type="button" aria-controls="main-menu" aria-expanded="false"><span class="fa">منو</span><span class="en">Menu</span></button>
+<div class="menu" id="main-menu"><a href="#about"><span class="fa">درباره ما</span><span class="en">About</span></a><a href="#services"><span class="fa">خدمات</span><span class="en">Services</span></a><a href="#packages"><span class="fa">پکیج‌ها</span><span class="en">Packages</span></a><a href="#fees"><span class="fa">تعرفه‌ها</span><span class="en">Fees</span></a><a href="#growth"><span class="fa">ورود به بازار</span><span class="en">Market Entry</span></a><a href="#contact"><span class="fa">تماس</span><span class="en">Contact</span></a>
+<div class="lang-switch"><button id="faBtn" class="active" type="button" data-language="fa">فارسی</button><button id="enBtn" type="button" data-language="en">English</button>
+</div><a href="request.html" class="btn btn-primary consultation-cta"><span class="fa">درخواست مشاوره</span><span class="en">Request a Consultation</span></a>
+</div>
+</div>
+</nav>
+<main id="main-content">
+<header class="hero" id="top">
+<div class="wrap">
+<div class="stripe"><i></i><i></i><i></i>
+</div>
+<div class="hero-grid">
+<div>
+<div class="eyebrow"><span class="fa">خدمات شرکتی و سرمایه‌گذاری عمان</span><span class="en">Oman Corporate & Investment Services</span>
+</div>
+<h1><span class="fa">دروازه حرفه‌ای شما<br>برای ورود به عمان</span><span class="en">Executive Gateway<br>to Oman</span>
+</h1>
+<p><span class="fa">تیم ما در عمان مستقر است و به شرکت‌ها، سرمایه‌گذاران و مدیران ایرانی در ثبت شرکت، امور شرکتی و ورود به بازار عمان کمک می‌کند.</span><span class="en">Based in Oman, we help international companies, investors and entrepreneurs with company formation, corporate advisory and entry into the Omani market.</span>
+</p>
+<div class="actions"><a class="btn btn-primary consultation-cta" href="request.html"><span class="fa">درخواست مشاوره</span><span class="en">Request a Consultation</span></a><a class="btn btn-outline" target="_blank" rel="noopener" href="https://wa.me/96893881823">WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+</header>
 
-<section class="section alt" id="services"><div class="wrap"><div class="eyebrow"><span class="fa">معماری خدمات ما</span><span class="en">Our Service Architecture</span></div><h2><span class="fa">هرآنچه برای تأسیس و فعالیت حرفه‌ای در عمان نیاز دارید</span><span class="en">Everything required to establish and operate in Oman</span></h2><p class="lead"><span class="fa">برای کسب‌وکارهای جدی که به چیزی فراتر از یک سرویس ارزان ثبت شرکت نیاز دارند.</span><span class="en">Designed for serious businesses that require more than a low-cost registration service.</span></p><div class="cards">
-<div class="card"><div class="num">01</div><h3><span class="fa">ورود به بازار و ساختاردهی</span><span class="en">Market Entry & Structuring</span></h3><p><span class="fa">بررسی مدل کسب‌وکار، ساختار حقوقی، برنامه مالکیت، فعالیت‌ها، نقشه راه مقرراتی و پشتیبانی امکان‌سنجی.</span><span class="en">Business model review, legal structure, ownership planning, activity mapping, regulatory roadmap and feasibility support.</span></p><a class="service-link" href="request.html?service=market-entry"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a></div>
-<div class="card"><div class="num">02</div><h3><span class="fa">ثبت و تأسیس شرکت</span><span class="en">Company Formation</span></h3><p><span class="fa">هماهنگی ثبت تجاری، اسناد تأسیسی، اتاق بازرگانی، مجوز سرمایه‌گذاری و مجوزهای فعالیت.</span><span class="en">Commercial registration coordination, constitutional documents, Chamber, investment licence and activity licensing support.</span></p><a class="service-link" href="request.html?service=formation"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a></div>
-<div class="card"><div class="num">03</div><h3><span class="fa">بانک و تطبیق</span><span class="en">Banking & Compliance</span></h3><p><span class="fa">آماده‌سازی KYC، مدارک UBO، پرونده منشأ وجوه، انتخاب بانک و هماهنگی فرایند درخواست.</span><span class="en">KYC preparation, UBO documentation, source-of-funds file, bank selection, application coordination and compliance readiness.</span></p><a class="service-link" href="request.html?service=banking"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a></div>
-<div class="card"><div class="num">04</div><h3><span class="fa">مالیات، حسابداری و مالی</span><span class="en">Tax, Accounting & Finance</span></h3><p><span class="fa">ثبت مالیاتی، VAT، راه‌اندازی حسابداری، حساب‌های مدیریتی، اظهارنامه‌ها، حسابرسی و طراحی واحد مالی.</span><span class="en">Tax registration, VAT, bookkeeping setup, management accounts, return coordination, audit liaison and finance-function setup.</span></p><a class="service-link" href="request.html?service=tax"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a></div>
-<div class="card"><div class="num">05</div><h3><span class="fa">مهاجرت و نیروی کار</span><span class="en">Immigration & Labour</span></h3><p><span class="fa">پرونده‌های سرمایه‌گذار و استخدام، مجوز کار، کارت اقامت، اقامت خانواده و مشاوره عمانی‌سازی.</span><span class="en">Investor and employment cases, labour clearance coordination, resident-card process, family residency roadmap and Omanisation advisory.</span></p><a class="service-link" href="request.html?service=immigration"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a></div>
-<div class="card"><div class="num">06</div><h3><span class="fa">خدمات شرکتی و PRO</span><span class="en">Corporate Care & PRO</span></h3><p><span class="fa">پایش مجوزها، پیگیری امور دولتی، هماهنگی دبیرخانه شرکتی، تقویم تطبیق و پشتیبانی مستمر اجرایی.</span><span class="en">Licence monitoring, government liaison, corporate secretarial coordination, compliance calendar and ongoing executive support.</span></p><a class="service-link" href="request.html?service=corporate-care"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a></div>
-<div class="card"><div class="num">07</div><h3><span class="fa">تجارت و توسعه بازار</span><span class="en">Trade & Market Development</span></h3><p><span class="fa">ساختار واردات و صادرات، جست‌وجوی توزیع‌کننده، B2B، ثبت فروشنده، آمادگی مناقصه و اجرای ورود به بازار.</span><span class="en">Import/export structuring, distributor search, B2B matchmaking, vendor registration, tender readiness and market-entry execution.</span></p><a class="service-link" href="request.html?service=development"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a></div>
-<div class="card"><div class="num">08</div><h3><span class="fa">حضور اجرایی در مسقط</span><span class="en">Executive Presence</span></h3><p><span class="fa">آدرس تجاری ممتاز، اتاق جلسه، پذیرش، مدیریت نامه‌ها و خدمات کانسیرج شرکتی در مسقط.</span><span class="en">Premium business address, meeting facilities, reception, mail handling and corporate concierge in Muscat.</span></p><a class="service-link" href="request.html?service=executive-presence"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a></div>
-</div></div></section>
-<section class="section" id="packages"><div class="wrap"><div class="eyebrow"><span class="fa">سه سطح خدمات</span><span class="en">Three Service Levels</span></div><h2><span class="fa">سطح اجرایی مناسب کسب‌وکار خود را انتخاب کنید</span><span class="en">Choose the level of execution your business requires</span></h2><p class="lead"><span class="fa">هزینه‌های حرفه‌ای زیر، هزینه‌های دولتی و شخص ثالث را شامل نمی‌شود مگر آنکه صراحتاً ذکر شده باشد.</span><span class="en">Professional fees below exclude government charges and third-party costs unless expressly stated.</span></p><p class="package-progression"><span class="fa">بنیان · مسیر · اوج</span><span class="en">FOUNDATION · PATHWAY · OWJ</span><br><span class="fa">راه‌اندازی · ورود به بازار · رشد و حضور اجرایی</span><span class="en">Business Setup · Market Entry · Executive Growth</span></p><div class="packages">
-<article class="package" aria-labelledby="foundation-name"><header><h3 id="foundation-name"><span class="fa">بنیان</span><span class="en">FOUNDATION</span></h3><div class="name-meaning" aria-hidden="true"></div><p class="package-descriptor"><span class="fa">راه‌اندازی و تأسیس کسب‌وکار</span><span class="en">Business Setup & Establishment</span></p><p class="package-audience"><span class="fa">برای راه‌اندازی اصولی شرکت و آماده‌سازی زیرساخت‌های اولیه کسب‌وکار در عمان.</span><span class="en">For establishing a company and preparing the essential foundations for operating in Oman.</span></p></header><div class="price">OMR 4,950</div><p class="package-duration"><span class="fa">۳ ماه پشتیبانی پس از ثبت</span><span class="en">3 months post-formation support</span></p><ul><li><span class="fa">مشاوره اجرایی و ارزیابی اولیه ورود به عمان</span><span class="en">Executive consultation and initial Oman entry assessment</span></li><li><span class="fa">نقشه راه ساختار حقوقی، مالکیت و فعالیت</span><span class="en">Legal-form, ownership and activity structuring roadmap</span></li><li><span class="fa">هماهنگی ثبت شرکت و فرایند ثبت</span><span class="en">Company formation and registration coordination</span></li><li><span class="fa">آدرس تجاری ممتاز برای ۱۲ ماه</span><span class="en">Premium registered business address for 12 months</span></li><li><span class="fa">پرونده آمادگی بانکی و چک‌لیست KYC</span><span class="en">Banking-readiness file and KYC checklist</span></li></ul><details class="package-details"><summary><span class="fa">مشاهده همه خدمات</span><span class="en">View all services</span></summary><ul><li><span class="fa">مدیر حساب اختصاص‌یافته + ۳ ماه پشتیبانی پس از ثبت</span><span class="en">Assigned account manager + 3 months post-formation support</span></li></ul></details><a class="btn btn-primary package-cta" href="request.html?package=foundation"><span class="fa">درخواست مشاوره</span><span class="en">Request a Consultation</span></a></article>
-<article class="package" aria-labelledby="pathway-name"><header><h3 id="pathway-name"><span class="fa">مسیر</span><span class="en">PATHWAY</span></h3><div class="name-meaning" aria-hidden="true"></div><p class="package-descriptor"><span class="fa">ورود به بازار و توسعه تجاری</span><span class="en">Market Entry & Business Development</span></p><p class="package-audience"><span class="fa">برای کسب‌وکارهایی که علاوه بر تأسیس شرکت، به شناخت بازار، اقامت و توسعه ارتباطات تجاری نیاز دارند.</span><span class="en">For businesses that need market-entry support, executive residency coordination, market insight and commercial introductions.</span></p></header><div class="price">OMR 8,900</div><p class="package-duration"><span class="fa">۶ ماه خدمات شرکتی</span><span class="en">6 months Corporate Care</span></p><ul><li><span class="fa">تمام خدمات بنیان</span><span class="en">Everything in FOUNDATION</span></li><li><span class="fa">ساختاردهی پیشرفته ایران–عمان</span><span class="en">Advanced Iran–Oman corporate structuring</span></li><li><span class="fa">پرونده بانکی پیشرفته، UBO و بررسی منشأ وجوه</span><span class="en">Advanced banking file, UBO pack and source-of-funds review</span></li><li><span class="fa">هماهنگی اقامت برای یک مدیر اجرایی</span><span class="en">Residence process coordination for one executive</span></li><li><span class="fa">خدمات Corporate Care برای ۶ ماه</span><span class="en">Corporate Care for 6 months</span></li></ul><details class="package-details"><summary><span class="fa">مشاهده همه خدمات</span><span class="en">View all services</span></summary><ul><li><span class="fa">کارگاه ورود به بازار و تصویر رقابتی</span><span class="en">Market-entry workshop and competitor snapshot</span></li><li><span class="fa">تا ۳ معرفی تجاری هدفمند</span><span class="en">Up to 3 targeted business introductions</span></li></ul></details><a class="btn btn-primary package-cta" href="request.html?package=pathway"><span class="fa">درخواست مشاوره</span><span class="en">Request a Consultation</span></a></article>
-<article class="package" aria-labelledby="owj-name"><header><h3 id="owj-name"><span class="fa">اوج</span><span class="en">OWJ</span></h3><div class="name-meaning"><span class="en">Meaning: Peak</span></div><p class="package-descriptor"><span class="fa">مدیریت و توسعه کسب‌وکار</span><span class="en">Executive Presence & Long-Term Growth</span></p><p class="package-audience"><span class="fa">بالاترین سطح پشتیبانی برای حضور اجرایی، مدیریت مستمر و رشد بلندمدت کسب‌وکار در عمان.</span><span class="en">Our highest level of support for established businesses building an executive presence and pursuing long-term growth in Oman.</span></p></header><div class="price">OMR 14,900</div><p class="package-duration"><span class="fa">۱۲ ماه خدمات شرکتی</span><span class="en">12 months Corporate Care</span></p><ul><li><span class="fa">تمام خدمات مسیر</span><span class="en">Everything in PATHWAY</span></li><li><span class="fa">مشاور ارشد و نقشه راه توسعه در سطح هیئت‌مدیره</span><span class="en">Senior adviser and board-level Oman expansion roadmap</span></li><li><span class="fa">میز اختصاصی شرکتی ایران–عمان</span><span class="en">Dedicated Iran–Oman Corporate Desk</span></li><li><span class="fa">استراتژی بانکی اجرایی و ارزیابی چندبانکی</span><span class="en">Executive banking strategy and multi-bank assessment</span></li><li><span class="fa">Corporate Care برای ۱۲ ماه</span><span class="en">Corporate Care for 12 months</span></li></ul><details class="package-details"><summary><span class="fa">مشاهده همه خدمات</span><span class="en">View all services</span></summary><ul><li><span class="fa">تا ۱۰ معرفی تجاری هدفمند</span><span class="en">Up to 10 targeted business introductions</span></li><li><span class="fa">حضور اجرایی و هماهنگی VIP مهمانان</span><span class="en">Executive presence and VIP guest coordination</span></li></ul></details><a class="btn btn-primary package-cta" href="request.html?package=owj"><span class="fa">درخواست مشاوره</span><span class="en">Request a Consultation</span></a></article>
-</div><details class="package-comparison"><summary><span class="fa">مقایسه دقیق پکیج‌ها</span><span class="en">Compare packages in detail</span></summary><div class="compare" tabindex="0" role="region" aria-labelledby="comparison-caption"><table><caption id="comparison-caption"><span class="fa">مقایسه پکیج‌ها</span><span class="en">Package comparison</span></caption><thead><tr><th><span class="fa">سطح خدمت</span><span class="en">Service Level</span></th><th scope="col"><span class="fa">بنیان</span><span class="en">FOUNDATION</span></th><th scope="col"><span class="fa">مسیر</span><span class="en">PATHWAY</span></th><th scope="col"><span class="fa">اوج</span><span class="en">OWJ</span></th></tr></thead><tbody><tr><td><span class="fa">هزینه حرفه‌ای</span><span class="en">Professional Fee</span></td><td>OMR 4,950</td><td>OMR 8,900</td><td><strong>OMR 14,900</strong></td></tr><tr><td><span class="fa">مدیر حساب</span><span class="en">Account Manager</span></td><td><span class="fa">اختصاص‌یافته</span><span class="en">Assigned</span></td><td><span class="fa">اختصاصی</span><span class="en">Dedicated</span></td><td><span class="fa">ارشد اختصاصی</span><span class="en">Senior dedicated</span></td></tr><tr><td><span class="fa">آدرس ممتاز</span><span class="en">Premium Address</span></td><td><span class="fa">۱۲ ماه</span><span class="en">12 months</span></td><td><span class="fa">۱۲ ماه</span><span class="en">12 months</span></td><td><span class="fa">۱۲ ماه</span><span class="en">12 months</span></td></tr><tr><td><span class="fa">پشتیبانی بانکی</span><span class="en">Banking Support</span></td><td><span class="fa">استاندارد</span><span class="en">Standard</span></td><td><span class="fa">KYC پیشرفته</span><span class="en">Advanced KYC</span></td><td><span class="fa">میز اجرایی</span><span class="en">Executive desk</span></td></tr><tr><td><span class="fa">پشتیبانی پس از ثبت</span><span class="en">Post-Formation Support</span></td><td><span class="fa">۳ ماه</span><span class="en">3 months</span></td><td><span class="fa">۶ ماه</span><span class="en">6 months</span></td><td><span class="fa">۱۲ ماه</span><span class="en">12 months</span></td></tr></tbody></table></div></details></div></section>
-<section class="section alt" id="fees"><div class="wrap"><div class="eyebrow"><span class="fa">تعرفه خدمات حرفه‌ای</span><span class="en">Professional Fee Schedule</span></div><h2><span class="fa">خدمات ماژولار شرکتی، بانکی، مالیاتی و مهاجرتی</span><span class="en">Modular corporate, banking, tax and immigration support</span></h2><div class="fee-grid"><div class="fee-box"><h3><span class="fa">خدمات شرکت و امور شرکتی</span><span class="en">Company & Corporate Services</span></h3><div class="fee-row"><span><span class="fa">مشاوره اجرایی ۶۰/۹۰ دقیقه</span><span class="en">Executive Consultation · 60/90 min</span></span><strong>OMR 250</strong></div><div class="fee-row"><span><span class="fa">ثبت شرکت – حق‌الزحمه حرفه‌ای</span><span class="en">Company Formation · Professional Fee</span></span><strong>OMR 1,950</strong></div><div class="fee-row"><span><span class="fa">ثبت پیچیده / چندسهامداری</span><span class="en">Complex / Multi-shareholder Formation</span></span><strong>OMR 2,750</strong></div><div class="fee-row"><span><span class="fa">ثبت شعبه</span><span class="en">Branch Registration</span></span><strong>From OMR 3,500</strong></div><div class="fee-row"><span><span class="fa">هلدینگ / ساختار ویژه</span><span class="en">Holding / Special Structure</span></span><strong>From OMR 4,500</strong></div><div class="fee-row"><span><span class="fa">آماده‌سازی پرونده مجوز سرمایه‌گذاری</span><span class="en">Investment Licence File Preparation</span></span><strong>OMR 450</strong></div><div class="fee-row"><span><span class="fa">مطالعه امکان‌سنجی شرکتی</span><span class="en">Corporate Feasibility Study</span></span><strong>OMR 1,500–3,500</strong></div></div><div class="fee-box"><h3><span class="fa">بانک و تطبیق</span><span class="en">Banking & Compliance</span></h3><div class="fee-row"><span><span class="fa">همراهی افتتاح حساب شرکتی</span><span class="en">Corporate Bank Account Assistance</span></span><strong>OMR 750</strong></div><div class="fee-row"><span><span class="fa">پکیج پیشرفته بانکی و KYC</span><span class="en">Advanced Banking & KYC Package</span></span><strong>OMR 1,250</strong></div><div class="fee-row"><span><span class="fa">پرونده بانکی با پیچیدگی بالا</span><span class="en">High-Complexity Banking Case</span></span><strong>OMR 1,750–2,500</strong></div><div class="fee-row"><span><span class="fa">آماده‌سازی پرونده منشأ وجوه</span><span class="en">Source of Funds File Preparation</span></span><strong>OMR 750</strong></div><div class="fee-row"><span><span class="fa">پرونده شرکتی UBO / KYC</span><span class="en">UBO / KYC Corporate File</span></span><strong>OMR 600</strong></div></div><div class="fee-box"><h3><span class="fa">Corporate Care، مالیات و حسابداری</span><span class="en">Corporate Care, Tax & Accounting</span></h3><div class="fee-row"><span>Essential Care</span><strong>OMR 350/month</strong></div><div class="fee-row"><span>Corporate Care</span><strong>OMR 650/month</strong></div><div class="fee-row"><span>VIP Corporate Office</span><strong>OMR 1,250/month</strong></div><div class="fee-row"><span><span class="fa">ثبت مالیاتی</span><span class="en">Tax Registration</span></span><strong>OMR 350</strong></div><div class="fee-row"><span><span class="fa">ثبت VAT</span><span class="en">VAT Registration</span></span><strong>OMR 450</strong></div><div class="fee-row"><span><span class="fa">اظهارنامه فصلی VAT</span><span class="en">VAT Return · Quarterly</span></span><strong>OMR 350–650</strong></div><div class="fee-row"><span><span class="fa">حسابداری ماهانه</span><span class="en">Monthly Bookkeeping</span></span><strong>OMR 350–650</strong></div><div class="fee-row"><span><span class="fa">اظهارنامه مالیات شرکت</span><span class="en">Corporate Tax Return</span></span><strong>From OMR 750</strong></div></div><div class="fee-box"><h3><span class="fa">مهاجرت و نیروی کار</span><span class="en">Immigration & Labour</span></h3><div class="fee-row"><span><span class="fa">اقامت سرمایه‌گذار</span><span class="en">Investor Residence Processing</span></span><strong>OMR 750/person</strong></div><div class="fee-row"><span><span class="fa">ویزای استخدام</span><span class="en">Employment Visa Processing</span></span><strong>OMR 450/person</strong></div><div class="fee-row"><span><span class="fa">هماهنگی Labour Clearance</span><span class="en">Labour Clearance Coordination</span></span><strong>OMR 400/person</strong></div><div class="fee-row"><span><span class="fa">هماهنگی ویزای خانواده</span><span class="en">Family Visa Coordination</span></span><strong>OMR 350/person</strong></div><div class="fee-row"><span><span class="fa">مدیریت پرونده مهاجرتی اجرایی</span><span class="en">Executive Immigration Case Management</span></span><strong>From OMR 1,250</strong></div></div></div></div></section>
-<section class="section" id="growth"><div class="wrap"><div class="eyebrow"><span class="fa">خدمات رشد</span><span class="en">Growth Services</span></div><h2><span class="fa">ورود به بازار عمان و توسعه کسب‌وکار</span><span class="en">Oman Market Entry & Business Development</span></h2><p class="lead"><span class="fa">برای شرکت‌هایی که فراتر از ثبت شرکت، به اجرای تجاری واقعی نیاز دارند.</span><span class="en">For companies seeking commercial execution beyond incorporation.</span></p><div class="fee-grid"><div class="fee-box"><h3><span class="fa">ورود به بازار و تحقیقات</span><span class="en">Market Entry & Research</span></h3><div class="fee-row"><span><span class="fa">ارزیابی ورود به بازار عمان</span><span class="en">Oman Market Entry Assessment</span></span><strong>OMR 1,500</strong></div><div class="fee-row"><span><span class="fa">تحقیقات بازار – Executive</span><span class="en">Market Research · Executive</span></span><strong>OMR 2,500</strong></div><div class="fee-row"><span><span class="fa">مطالعه کامل بازار</span><span class="en">Full Market Study</span></span><strong>OMR 4,500–8,500</strong></div><div class="fee-row"><span><span class="fa">جست‌وجوی توزیع‌کننده</span><span class="en">Distributor Search</span></span><strong>OMR 2,500</strong></div><div class="fee-row"><span><span class="fa">جست‌وجو و ارزیابی شریک</span><span class="en">Partner Search & Qualification</span></span><strong>OMR 3,500</strong></div></div><div class="fee-box"><h3><span class="fa">اجرای تجاری</span><span class="en">Commercial Execution</span></h3><div class="fee-row"><span><span class="fa">پروژه B2B Matchmaking</span><span class="en">B2B Matchmaking Project</span></span><strong>From OMR 2,500</strong></div><div class="fee-row"><span><span class="fa">ثبت فروشنده – یک پلتفرم</span><span class="en">Vendor Registration · Single</span></span><strong>OMR 750</strong></div><div class="fee-row"><span><span class="fa">ثبت فروشنده در چند پلتفرم</span><span class="en">Multi-Platform Vendor Registration</span></span><strong>OMR 1,750</strong></div><div class="fee-row"><span><span class="fa">پکیج آمادگی مناقصه</span><span class="en">Tender Readiness Package</span></span><strong>OMR 2,500</strong></div><div class="fee-row"><span><span class="fa">رتینر توسعه کسب‌وکار</span><span class="en">Business Development Retainer</span></span><strong>OMR 2,500–5,000/month</strong></div><div class="fee-row"><span><span class="fa">نماینده کشوری عمان</span><span class="en">Oman Country Representative</span></span><strong>From OMR 4,500/month</strong></div></div></div></div></section>
-<section class="section alt"><div class="wrap"><div class="eyebrow"><span class="fa">شرایط تجاری</span><span class="en">Commercial Terms</span></div><h2><span class="fa">دامنه روشن، اجرای مبتنی بر تطبیق</span><span class="en">Clear scope. Compliance-first execution.</span></h2><div class="terms"><div class="term"><span class="fa">هزینه‌های دولتی، عوارض قانونی، مجوزها، ترجمه، تأییدات، حسابرسی، مشاور حقوقی، هزینه‌های بانکی، اجاره دفتر و سایر هزینه‌های شخص ثالث جداگانه محاسبه می‌شوند مگر آنکه در پیشنهاد امضاشده صراحتاً درج شده باشند.</span><span class="en">Government fees, statutory charges, licence fees, translations, attestations, audit fees, legal counsel, banking charges, office leases and other third-party costs are charged separately unless expressly included in a signed proposal.</span></div><div class="term"><span class="fa">تمام مبالغ، در صورت شمول طبق قوانین عمان، بدون VAT درج شده‌اند.</span><span class="en">All fees are exclusive of VAT, if applicable under Oman law.</span></div><div class="term"><span class="fa">زمان‌بندی پرداخت، خروجی‌ها و تعهدات سطح خدمت در قرارداد یا پیشنهاد خدمات تعریف می‌شود.</span><span class="en">Payment schedule, deliverables and service-level commitments are defined in the engagement letter or proposal.</span></div><div class="term"><span class="fa">هیچ تضمینی برای تأیید دولت، بانک یا نهادهای مقرراتی وجود ندارد و تصمیم نهایی مستقل است.</span><span class="en">Government, bank and regulatory approvals cannot be guaranteed and remain subject to independent assessment.</span></div><div class="term"><span class="fa">تمام خدمات بین‌المللی و بانکی بر مبنای رعایت الزامات تطبیق ارائه می‌شوند و شامل دورزدن تحریم‌ها، AML/CFT یا کنترل‌های بانکی و مقرراتی نیستند.</span><span class="en">All cross-border and banking support is provided on a compliance-first basis and does not include circumvention of applicable sanctions, AML/CFT, banking or regulatory controls.</span></div><div class="term"><span class="fa">پروژه‌های Enterprise و Strategic Investor به‌صورت جداگانه قیمت‌گذاری می‌شوند و معمولاً از OMR 25,000 آغاز می‌شوند.</span><span class="en">Enterprise & Strategic Investor engagements are quoted separately, typically from OMR 25,000 depending on scope.</span></div></div></div></section>
-<section class="section" id="about"><div class="wrap"><div class="eyebrow"><span class="fa">درباره ما</span><span class="en">About Us</span></div><h2><span class="fa">همراه حرفه‌ای شما برای ورود، فعالیت و رشد در عمان</span><span class="en">Your trusted partner for entering, operating and growing in Oman</span></h2><div class="about-grid"><div class="about-copy">
+<section class="section alt" id="services">
+<div class="wrap">
+<div class="eyebrow"><span class="fa">معماری خدمات ما</span><span class="en">Our Service Architecture</span>
+</div>
+<h2><span class="fa">هرآنچه برای تأسیس و فعالیت حرفه‌ای در عمان نیاز دارید</span><span class="en">Everything required to establish and operate in Oman</span>
+</h2>
+<p class="lead"><span class="fa">برای کسب‌وکارهای جدی که به چیزی فراتر از یک سرویس ارزان ثبت شرکت نیاز دارند.</span><span class="en">Designed for serious businesses that require more than a low-cost registration service.</span>
+</p>
+<div class="cards">
+<div class="card">
+<div class="num">01</div>
+<h3><span class="fa">ورود به بازار و ساختاردهی</span><span class="en">Market Entry & Structuring</span>
+</h3>
+<p><span class="fa">بررسی مدل کسب‌وکار، ساختار حقوقی، برنامه مالکیت، فعالیت‌ها، نقشه راه مقرراتی و پشتیبانی امکان‌سنجی.</span><span class="en">Business model review, legal structure, ownership planning, activity mapping, regulatory roadmap and feasibility support.</span>
+</p><a class="service-link" href="request.html?service=market-entry"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a>
+</div>
+<div class="card">
+<div class="num">02</div>
+<h3><span class="fa">ثبت و تأسیس شرکت</span><span class="en">Company Formation</span>
+</h3>
+<p><span class="fa">هماهنگی ثبت تجاری، اسناد تأسیسی، اتاق بازرگانی، مجوز سرمایه‌گذاری و مجوزهای فعالیت.</span><span class="en">Commercial registration coordination, constitutional documents, Chamber, investment licence and activity licensing support.</span>
+</p><a class="service-link" href="request.html?service=formation"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a>
+</div>
+<div class="card">
+<div class="num">03</div>
+<h3><span class="fa">بانک و تطبیق</span><span class="en">Banking & Compliance</span>
+</h3>
+<p><span class="fa">آماده‌سازی KYC، مدارک UBO، پرونده منشأ وجوه، انتخاب بانک و هماهنگی فرایند درخواست.</span><span class="en">KYC preparation, UBO documentation, source-of-funds file, bank selection, application coordination and compliance readiness.</span>
+</p><a class="service-link" href="request.html?service=banking"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a>
+</div>
+<div class="card">
+<div class="num">04</div>
+<h3><span class="fa">مالیات، حسابداری و مالی</span><span class="en">Tax, Accounting & Finance</span>
+</h3>
+<p><span class="fa">ثبت مالیاتی، VAT، راه‌اندازی حسابداری، حساب‌های مدیریتی، اظهارنامه‌ها، حسابرسی و طراحی واحد مالی.</span><span class="en">Tax registration, VAT, bookkeeping setup, management accounts, return coordination, audit liaison and finance-function setup.</span>
+</p><a class="service-link" href="request.html?service=tax"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a>
+</div>
+<div class="card">
+<div class="num">05</div>
+<h3><span class="fa">مهاجرت و نیروی کار</span><span class="en">Immigration & Labour</span>
+</h3>
+<p><span class="fa">پرونده‌های سرمایه‌گذار و استخدام، مجوز کار، کارت اقامت، اقامت خانواده و مشاوره عمانی‌سازی.</span><span class="en">Investor and employment cases, labour clearance coordination, resident-card process, family residency roadmap and Omanisation advisory.</span>
+</p><a class="service-link" href="request.html?service=immigration"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a>
+</div>
+<div class="card">
+<div class="num">06</div>
+<h3><span class="fa">خدمات شرکتی و PRO</span><span class="en">Corporate Care & PRO</span>
+</h3>
+<p><span class="fa">پایش مجوزها، پیگیری امور دولتی، هماهنگی دبیرخانه شرکتی، تقویم تطبیق و پشتیبانی مستمر اجرایی.</span><span class="en">Licence monitoring, government liaison, corporate secretarial coordination, compliance calendar and ongoing executive support.</span>
+</p><a class="service-link" href="request.html?service=corporate-care"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a>
+</div>
+<div class="card">
+<div class="num">07</div>
+<h3><span class="fa">تجارت و توسعه بازار</span><span class="en">Trade & Market Development</span>
+</h3>
+<p><span class="fa">ساختار واردات و صادرات، جست‌وجوی توزیع‌کننده، B2B، ثبت فروشنده، آمادگی مناقصه و اجرای ورود به بازار.</span><span class="en">Import/export structuring, distributor search, B2B matchmaking, vendor registration, tender readiness and market-entry execution.</span>
+</p><a class="service-link" href="request.html?service=development"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a>
+</div>
+<div class="card">
+<div class="num">08</div>
+<h3><span class="fa">حضور اجرایی در مسقط</span><span class="en">Executive Presence</span>
+</h3>
+<p><span class="fa">آدرس تجاری ممتاز، اتاق جلسه، پذیرش، مدیریت نامه‌ها و خدمات کانسیرج شرکتی در مسقط.</span><span class="en">Premium business address, meeting facilities, reception, mail handling and corporate concierge in Muscat.</span>
+</p><a class="service-link" href="request.html?service=executive-presence"><span class="fa">پرس‌وجو درباره این خدمت</span><span class="en">Enquire about this service</span></a>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="packages">
+<div class="wrap">
+<div class="eyebrow"><span class="fa">سه سطح خدمات</span><span class="en">Three Service Levels</span>
+</div>
+<h2><span class="fa">سطح اجرایی مناسب کسب‌وکار خود را انتخاب کنید</span><span class="en">Choose the level of execution your business requires</span>
+</h2>
+<p class="lead"><span class="fa">هزینه‌های حرفه‌ای زیر، هزینه‌های دولتی و شخص ثالث را شامل نمی‌شود مگر آنکه صراحتاً ذکر شده باشد.</span><span class="en">Professional fees below exclude government charges and third-party costs unless expressly stated.</span>
+</p>
+<p class="package-progression"><span class="fa">بنیان · مسیر · اوج</span><span class="en">FOUNDATION · PATHWAY · OWJ</span><br><span class="fa">راه‌اندازی · ورود به بازار · رشد و حضور اجرایی</span><span class="en">Business Setup · Market Entry · Executive Growth</span>
+</p>
+<div class="packages">
+<article class="package" aria-labelledby="foundation-name">
+<header>
+<h3 id="foundation-name"><span class="fa">بنیان</span><span class="en">FOUNDATION</span>
+</h3>
+<div class="name-meaning" aria-hidden="true">
+</div>
+<p class="package-descriptor"><span class="fa">راه‌اندازی و تأسیس کسب‌وکار</span><span class="en">Business Setup & Establishment</span>
+</p>
+<p class="package-audience"><span class="fa">برای راه‌اندازی اصولی شرکت و آماده‌سازی زیرساخت‌های اولیه کسب‌وکار در عمان.</span><span class="en">For establishing a company and preparing the essential foundations for operating in Oman.</span>
+</p>
+</header>
+<div class="price">OMR 4,950</div>
+<p class="package-duration"><span class="fa">۳ ماه پشتیبانی پس از ثبت</span><span class="en">3 months post-formation support</span>
+</p>
+<ul>
+<li><span class="fa">مشاوره اجرایی و ارزیابی اولیه ورود به عمان</span><span class="en">Executive consultation and initial Oman entry assessment</span>
+</li>
+<li><span class="fa">نقشه راه ساختار حقوقی، مالکیت و فعالیت</span><span class="en">Legal-form, ownership and activity structuring roadmap</span>
+</li>
+<li><span class="fa">هماهنگی ثبت شرکت و فرایند ثبت</span><span class="en">Company formation and registration coordination</span>
+</li>
+<li><span class="fa">آدرس تجاری ممتاز برای ۱۲ ماه</span><span class="en">Premium registered business address for 12 months</span>
+</li>
+<li><span class="fa">پرونده آمادگی بانکی و چک‌لیست KYC</span><span class="en">Banking-readiness file and KYC checklist</span>
+</li>
+</ul>
+<details class="package-details">
+<summary><span class="fa">مشاهده همه خدمات</span><span class="en">View all services</span>
+</summary>
+<ul>
+<li><span class="fa">مدیر حساب اختصاص‌یافته + ۳ ماه پشتیبانی پس از ثبت</span><span class="en">Assigned account manager + 3 months post-formation support</span>
+</li>
+</ul>
+</details><a class="btn btn-primary package-cta" href="request.html?package=foundation"><span class="fa">درخواست مشاوره</span><span class="en">Request a Consultation</span></a>
+</article>
+<article class="package" aria-labelledby="pathway-name">
+<header>
+<h3 id="pathway-name"><span class="fa">مسیر</span><span class="en">PATHWAY</span>
+</h3>
+<div class="name-meaning" aria-hidden="true">
+</div>
+<p class="package-descriptor"><span class="fa">ورود به بازار و توسعه تجاری</span><span class="en">Market Entry & Business Development</span>
+</p>
+<p class="package-audience"><span class="fa">برای کسب‌وکارهایی که علاوه بر تأسیس شرکت، به شناخت بازار، اقامت و توسعه ارتباطات تجاری نیاز دارند.</span><span class="en">For businesses that need market-entry support, executive residency coordination, market insight and commercial introductions.</span>
+</p>
+</header>
+<div class="price">OMR 8,900</div>
+<p class="package-duration"><span class="fa">۶ ماه خدمات شرکتی</span><span class="en">6 months Corporate Care</span>
+</p>
+<ul>
+<li><span class="fa">تمام خدمات بنیان</span><span class="en">Everything in FOUNDATION</span>
+</li>
+<li><span class="fa">ساختاردهی پیشرفته ایران–عمان</span><span class="en">Advanced Iran–Oman corporate structuring</span>
+</li>
+<li><span class="fa">پرونده بانکی پیشرفته، UBO و بررسی منشأ وجوه</span><span class="en">Advanced banking file, UBO pack and source-of-funds review</span>
+</li>
+<li><span class="fa">هماهنگی اقامت برای یک مدیر اجرایی</span><span class="en">Residence process coordination for one executive</span>
+</li>
+<li><span class="fa">خدمات Corporate Care برای ۶ ماه</span><span class="en">Corporate Care for 6 months</span>
+</li>
+</ul>
+<details class="package-details">
+<summary><span class="fa">مشاهده همه خدمات</span><span class="en">View all services</span>
+</summary>
+<ul>
+<li><span class="fa">کارگاه ورود به بازار و تصویر رقابتی</span><span class="en">Market-entry workshop and competitor snapshot</span>
+</li>
+<li><span class="fa">تا ۳ معرفی تجاری هدفمند</span><span class="en">Up to 3 targeted business introductions</span>
+</li>
+</ul>
+</details><a class="btn btn-primary package-cta" href="request.html?package=pathway"><span class="fa">درخواست مشاوره</span><span class="en">Request a Consultation</span></a>
+</article>
+<article class="package" aria-labelledby="owj-name">
+<header>
+<h3 id="owj-name"><span class="fa">اوج</span><span class="en">OWJ</span>
+</h3>
+<div class="name-meaning"><span class="en">Meaning: Peak</span>
+</div>
+<p class="package-descriptor"><span class="fa">مدیریت و توسعه کسب‌وکار</span><span class="en">Executive Presence & Long-Term Growth</span>
+</p>
+<p class="package-audience"><span class="fa">بالاترین سطح پشتیبانی برای حضور اجرایی، مدیریت مستمر و رشد بلندمدت کسب‌وکار در عمان.</span><span class="en">Our highest level of support for established businesses building an executive presence and pursuing long-term growth in Oman.</span>
+</p>
+</header>
+<div class="price">OMR 14,900</div>
+<p class="package-duration"><span class="fa">۱۲ ماه خدمات شرکتی</span><span class="en">12 months Corporate Care</span>
+</p>
+<ul>
+<li><span class="fa">تمام خدمات مسیر</span><span class="en">Everything in PATHWAY</span>
+</li>
+<li><span class="fa">مشاور ارشد و نقشه راه توسعه در سطح هیئت‌مدیره</span><span class="en">Senior adviser and board-level Oman expansion roadmap</span>
+</li>
+<li><span class="fa">میز اختصاصی شرکتی ایران–عمان</span><span class="en">Dedicated Iran–Oman Corporate Desk</span>
+</li>
+<li><span class="fa">استراتژی بانکی اجرایی و ارزیابی چندبانکی</span><span class="en">Executive banking strategy and multi-bank assessment</span>
+</li>
+<li><span class="fa">Corporate Care برای ۱۲ ماه</span><span class="en">Corporate Care for 12 months</span>
+</li>
+</ul>
+<details class="package-details">
+<summary><span class="fa">مشاهده همه خدمات</span><span class="en">View all services</span>
+</summary>
+<ul>
+<li><span class="fa">تا ۱۰ معرفی تجاری هدفمند</span><span class="en">Up to 10 targeted business introductions</span>
+</li>
+<li><span class="fa">حضور اجرایی و هماهنگی VIP مهمانان</span><span class="en">Executive presence and VIP guest coordination</span>
+</li>
+</ul>
+</details><a class="btn btn-primary package-cta" href="request.html?package=owj"><span class="fa">درخواست مشاوره</span><span class="en">Request a Consultation</span></a>
+</article>
+</div>
+<details class="package-comparison">
+<summary><span class="fa">مقایسه دقیق پکیج‌ها</span><span class="en">Compare packages in detail</span>
+</summary>
+<div class="compare" tabindex="0" role="region" aria-labelledby="comparison-caption"><table><caption id="comparison-caption"><span class="fa">مقایسه پکیج‌ها</span><span class="en">Package comparison</span></caption><thead><tr><th><span class="fa">سطح خدمت</span><span class="en">Service Level</span></th><th scope="col"><span class="fa">بنیان</span><span class="en">FOUNDATION</span></th><th scope="col"><span class="fa">مسیر</span><span class="en">PATHWAY</span></th><th scope="col"><span class="fa">اوج</span><span class="en">OWJ</span></th></tr></thead><tbody><tr><td><span class="fa">هزینه حرفه‌ای</span><span class="en">Professional Fee</span></td><td>OMR 4,950</td><td>OMR 8,900</td><td><strong>OMR 14,900</strong></td></tr><tr><td><span class="fa">مدیر حساب</span><span class="en">Account Manager</span></td><td><span class="fa">اختصاص‌یافته</span><span class="en">Assigned</span></td><td><span class="fa">اختصاصی</span><span class="en">Dedicated</span></td><td><span class="fa">ارشد اختصاصی</span><span class="en">Senior dedicated</span></td></tr><tr><td><span class="fa">آدرس ممتاز</span><span class="en">Premium Address</span></td><td><span class="fa">۱۲ ماه</span><span class="en">12 months</span></td><td><span class="fa">۱۲ ماه</span><span class="en">12 months</span></td><td><span class="fa">۱۲ ماه</span><span class="en">12 months</span></td></tr><tr><td><span class="fa">پشتیبانی بانکی</span><span class="en">Banking Support</span></td><td><span class="fa">استاندارد</span><span class="en">Standard</span></td><td><span class="fa">KYC پیشرفته</span><span class="en">Advanced KYC</span></td><td><span class="fa">میز اجرایی</span><span class="en">Executive desk</span></td></tr><tr><td><span class="fa">پشتیبانی پس از ثبت</span><span class="en">Post-Formation Support</span></td><td><span class="fa">۳ ماه</span><span class="en">3 months</span></td><td><span class="fa">۶ ماه</span><span class="en">6 months</span></td><td><span class="fa">۱۲ ماه</span><span class="en">12 months</span></td></tr></tbody></table>
+</div>
+</details>
+</div>
+</section>
+<section class="section alt" id="fees">
+<div class="wrap">
+<div class="eyebrow"><span class="fa">تعرفه خدمات حرفه‌ای</span><span class="en">Professional Fee Schedule</span>
+</div>
+<h2><span class="fa">خدمات ماژولار شرکتی، بانکی، مالیاتی و مهاجرتی</span><span class="en">Modular corporate, banking, tax and immigration support</span>
+</h2>
+<div class="fee-grid">
+<div class="fee-box">
+<h3><span class="fa">خدمات شرکت و امور شرکتی</span><span class="en">Company & Corporate Services</span>
+</h3>
+<div class="fee-row"><span><span class="fa">مشاوره اجرایی ۶۰/۹۰ دقیقه</span><span class="en">Executive Consultation · 60/90 min</span></span><strong>OMR 250</strong>
+</div>
+<div class="fee-row"><span><span class="fa">ثبت شرکت – حق‌الزحمه حرفه‌ای</span><span class="en">Company Formation · Professional Fee</span></span><strong>OMR 1,950</strong>
+</div>
+<div class="fee-row"><span><span class="fa">ثبت پیچیده / چندسهامداری</span><span class="en">Complex / Multi-shareholder Formation</span></span><strong>OMR 2,750</strong>
+</div>
+<div class="fee-row"><span><span class="fa">ثبت شعبه</span><span class="en">Branch Registration</span></span><strong>From OMR 3,500</strong>
+</div>
+<div class="fee-row"><span><span class="fa">هلدینگ / ساختار ویژه</span><span class="en">Holding / Special Structure</span></span><strong>From OMR 4,500</strong>
+</div>
+<div class="fee-row"><span><span class="fa">آماده‌سازی پرونده مجوز سرمایه‌گذاری</span><span class="en">Investment Licence File Preparation</span></span><strong>OMR 450</strong>
+</div>
+<div class="fee-row"><span><span class="fa">مطالعه امکان‌سنجی شرکتی</span><span class="en">Corporate Feasibility Study</span></span><strong>OMR 1,500–3,500</strong>
+</div>
+</div>
+<div class="fee-box">
+<h3><span class="fa">بانک و تطبیق</span><span class="en">Banking & Compliance</span>
+</h3>
+<div class="fee-row"><span><span class="fa">همراهی افتتاح حساب شرکتی</span><span class="en">Corporate Bank Account Assistance</span></span><strong>OMR 750</strong>
+</div>
+<div class="fee-row"><span><span class="fa">پکیج پیشرفته بانکی و KYC</span><span class="en">Advanced Banking & KYC Package</span></span><strong>OMR 1,250</strong>
+</div>
+<div class="fee-row"><span><span class="fa">پرونده بانکی با پیچیدگی بالا</span><span class="en">High-Complexity Banking Case</span></span><strong>OMR 1,750–2,500</strong>
+</div>
+<div class="fee-row"><span><span class="fa">آماده‌سازی پرونده منشأ وجوه</span><span class="en">Source of Funds File Preparation</span></span><strong>OMR 750</strong>
+</div>
+<div class="fee-row"><span><span class="fa">پرونده شرکتی UBO / KYC</span><span class="en">UBO / KYC Corporate File</span></span><strong>OMR 600</strong>
+</div>
+</div>
+<div class="fee-box">
+<h3><span class="fa">Corporate Care، مالیات و حسابداری</span><span class="en">Corporate Care, Tax & Accounting</span>
+</h3>
+<div class="fee-row"><span>Essential Care</span><strong>OMR 350/month</strong>
+</div>
+<div class="fee-row"><span>Corporate Care</span><strong>OMR 650/month</strong>
+</div>
+<div class="fee-row"><span>VIP Corporate Office</span><strong>OMR 1,250/month</strong>
+</div>
+<div class="fee-row"><span><span class="fa">ثبت مالیاتی</span><span class="en">Tax Registration</span></span><strong>OMR 350</strong>
+</div>
+<div class="fee-row"><span><span class="fa">ثبت VAT</span><span class="en">VAT Registration</span></span><strong>OMR 450</strong>
+</div>
+<div class="fee-row"><span><span class="fa">اظهارنامه فصلی VAT</span><span class="en">VAT Return · Quarterly</span></span><strong>OMR 350–650</strong>
+</div>
+<div class="fee-row"><span><span class="fa">حسابداری ماهانه</span><span class="en">Monthly Bookkeeping</span></span><strong>OMR 350–650</strong>
+</div>
+<div class="fee-row"><span><span class="fa">اظهارنامه مالیات شرکت</span><span class="en">Corporate Tax Return</span></span><strong>From OMR 750</strong>
+</div>
+</div>
+<div class="fee-box">
+<h3><span class="fa">مهاجرت و نیروی کار</span><span class="en">Immigration & Labour</span>
+</h3>
+<div class="fee-row"><span><span class="fa">اقامت سرمایه‌گذار</span><span class="en">Investor Residence Processing</span></span><strong>OMR 750/person</strong>
+</div>
+<div class="fee-row"><span><span class="fa">ویزای استخدام</span><span class="en">Employment Visa Processing</span></span><strong>OMR 450/person</strong>
+</div>
+<div class="fee-row"><span><span class="fa">هماهنگی Labour Clearance</span><span class="en">Labour Clearance Coordination</span></span><strong>OMR 400/person</strong>
+</div>
+<div class="fee-row"><span><span class="fa">هماهنگی ویزای خانواده</span><span class="en">Family Visa Coordination</span></span><strong>OMR 350/person</strong>
+</div>
+<div class="fee-row"><span><span class="fa">مدیریت پرونده مهاجرتی اجرایی</span><span class="en">Executive Immigration Case Management</span></span><strong>From OMR 1,250</strong>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="growth">
+<div class="wrap">
+<div class="eyebrow"><span class="fa">خدمات رشد</span><span class="en">Growth Services</span>
+</div>
+<h2><span class="fa">ورود به بازار عمان و توسعه کسب‌وکار</span><span class="en">Oman Market Entry & Business Development</span>
+</h2>
+<p class="lead"><span class="fa">برای شرکت‌هایی که فراتر از ثبت شرکت، به اجرای تجاری واقعی نیاز دارند.</span><span class="en">For companies seeking commercial execution beyond incorporation.</span>
+</p>
+<div class="fee-grid">
+<div class="fee-box">
+<h3><span class="fa">ورود به بازار و تحقیقات</span><span class="en">Market Entry & Research</span>
+</h3>
+<div class="fee-row"><span><span class="fa">ارزیابی ورود به بازار عمان</span><span class="en">Oman Market Entry Assessment</span></span><strong>OMR 1,500</strong>
+</div>
+<div class="fee-row"><span><span class="fa">تحقیقات بازار – Executive</span><span class="en">Market Research · Executive</span></span><strong>OMR 2,500</strong>
+</div>
+<div class="fee-row"><span><span class="fa">مطالعه کامل بازار</span><span class="en">Full Market Study</span></span><strong>OMR 4,500–8,500</strong>
+</div>
+<div class="fee-row"><span><span class="fa">جست‌وجوی توزیع‌کننده</span><span class="en">Distributor Search</span></span><strong>OMR 2,500</strong>
+</div>
+<div class="fee-row"><span><span class="fa">جست‌وجو و ارزیابی شریک</span><span class="en">Partner Search & Qualification</span></span><strong>OMR 3,500</strong>
+</div>
+</div>
+<div class="fee-box">
+<h3><span class="fa">اجرای تجاری</span><span class="en">Commercial Execution</span>
+</h3>
+<div class="fee-row"><span><span class="fa">پروژه B2B Matchmaking</span><span class="en">B2B Matchmaking Project</span></span><strong>From OMR 2,500</strong>
+</div>
+<div class="fee-row"><span><span class="fa">ثبت فروشنده – یک پلتفرم</span><span class="en">Vendor Registration · Single</span></span><strong>OMR 750</strong>
+</div>
+<div class="fee-row"><span><span class="fa">ثبت فروشنده در چند پلتفرم</span><span class="en">Multi-Platform Vendor Registration</span></span><strong>OMR 1,750</strong>
+</div>
+<div class="fee-row"><span><span class="fa">پکیج آمادگی مناقصه</span><span class="en">Tender Readiness Package</span></span><strong>OMR 2,500</strong>
+</div>
+<div class="fee-row"><span><span class="fa">رتینر توسعه کسب‌وکار</span><span class="en">Business Development Retainer</span></span><strong>OMR 2,500–5,000/month</strong>
+</div>
+<div class="fee-row"><span><span class="fa">نماینده کشوری عمان</span><span class="en">Oman Country Representative</span></span><strong>From OMR 4,500/month</strong>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt">
+<div class="wrap">
+<div class="eyebrow"><span class="fa">شرایط تجاری</span><span class="en">Commercial Terms</span>
+</div>
+<h2><span class="fa">دامنه روشن، اجرای مبتنی بر تطبیق</span><span class="en">Clear scope. Compliance-first execution.</span>
+</h2>
+<div class="terms">
+<div class="term"><span class="fa">هزینه‌های دولتی، عوارض قانونی، مجوزها، ترجمه، تأییدات، حسابرسی، مشاور حقوقی، هزینه‌های بانکی، اجاره دفتر و سایر هزینه‌های شخص ثالث جداگانه محاسبه می‌شوند مگر آنکه در پیشنهاد امضاشده صراحتاً درج شده باشند.</span><span class="en">Government fees, statutory charges, licence fees, translations, attestations, audit fees, legal counsel, banking charges, office leases and other third-party costs are charged separately unless expressly included in a signed proposal.</span>
+</div>
+<div class="term"><span class="fa">تمام مبالغ، در صورت شمول طبق قوانین عمان، بدون VAT درج شده‌اند.</span><span class="en">All fees are exclusive of VAT, if applicable under Oman law.</span>
+</div>
+<div class="term"><span class="fa">زمان‌بندی پرداخت، خروجی‌ها و تعهدات سطح خدمت در قرارداد یا پیشنهاد خدمات تعریف می‌شود.</span><span class="en">Payment schedule, deliverables and service-level commitments are defined in the engagement letter or proposal.</span>
+</div>
+<div class="term"><span class="fa">هیچ تضمینی برای تأیید دولت، بانک یا نهادهای مقرراتی وجود ندارد و تصمیم نهایی مستقل است.</span><span class="en">Government, bank and regulatory approvals cannot be guaranteed and remain subject to independent assessment.</span>
+</div>
+<div class="term"><span class="fa">تمام خدمات بین‌المللی و بانکی بر مبنای رعایت الزامات تطبیق ارائه می‌شوند و شامل دورزدن تحریم‌ها، AML/CFT یا کنترل‌های بانکی و مقرراتی نیستند.</span><span class="en">All cross-border and banking support is provided on a compliance-first basis and does not include circumvention of applicable sanctions, AML/CFT, banking or regulatory controls.</span>
+</div>
+<div class="term"><span class="fa">پروژه‌های Enterprise و Strategic Investor به‌صورت جداگانه قیمت‌گذاری می‌شوند و معمولاً از OMR 25,000 آغاز می‌شوند.</span><span class="en">Enterprise & Strategic Investor engagements are quoted separately, typically from OMR 25,000 depending on scope.</span>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="about">
+<div class="wrap">
+<div class="eyebrow"><span class="fa">درباره ما</span><span class="en">About Us</span>
+</div>
+<h2><span class="fa">همراه حرفه‌ای شما برای ورود، فعالیت و رشد در عمان</span><span class="en">Your trusted partner for entering, operating and growing in Oman</span>
+</h2>
+<div class="about-grid">
+<div class="about-copy">
 <p class="fa"><strong>Gulf Vision Horizon LLC</strong> یک شرکت خدمات کسب‌وکار و مشاوره مستقر در عمان است که با هدف کمک به کارآفرینان، سرمایه‌گذاران و شرکت‌های باسابقه برای ورود موفق، فعالیت حرفه‌ای و رشد پایدار در سلطنت عمان فعالیت می‌کند.</p>
-<p class="en"><strong>Gulf Vision Horizon LLC</strong> is an Oman-based business services and advisory company dedicated to helping entrepreneurs, investors, and established companies enter, operate, and grow successfully in the Sultanate of Oman.</p><details><summary><span class="fa">اطلاعات بیشتر درباره ما</span><span class="en">More about our approach</span></summary>
+<p class="en"><strong>Gulf Vision Horizon LLC</strong> is an Oman-based business services and advisory company dedicated to helping entrepreneurs, investors, and established companies enter, operate, and grow successfully in the Sultanate of Oman.</p>
+<div class="about-more">
 <p class="fa">ما مجموعه‌ای جامع از <strong>خدمات ثبت شرکت، مشاوره سرمایه‌گذاری، خدمات شرکتی، حسابداری، هماهنگی امور مالیاتی، تطبیق مقرراتی، پشتیبانی امور استخدام و توسعه کسب‌وکار</strong> ارائه می‌کنیم و توجه ویژه‌ای به نیازهای عملی سرمایه‌گذاران خارجی و کسب‌وکارهای بین‌المللی فعال در عمان داریم.</p>
 <p class="en">We provide a comprehensive range of <strong>company formation, investment advisory, corporate services, accounting, tax coordination, regulatory compliance, employment support, and business development services</strong>, with particular attention to the practical requirements of foreign investors and international businesses operating in Oman.</p>
 <p class="fa">رویکرد ما فراتر از انجام صرف ثبت‌ها و تشریفات اداری است. ما در تمام چرخه عمر کسب‌وکار در کنار مشتری هستیم؛ از انتخاب ساختار حقوقی مناسب و تأسیس شرکت، تا راه‌اندازی سیستم‌های حسابداری و عملیاتی، پشتیبانی تطبیق مقرراتی، هماهنگی نیازهای استخدام و اقامت، و کمک به مدیریت برای ایجاد یک حضور تجاری پایدار در عمان.</p>
@@ -59,15 +402,69 @@
 <p class="en">With practical knowledge of the Omani business environment and an understanding of local commercial practices, we aim to bridge the gap between international investors and the regulatory, financial, and operational realities of doing business in the Sultanate.</p>
 <p class="fa">در Gulf Vision Horizon معتقدیم خدمات مشاوره حرفه‌ای باید بر پایه <strong>دقت، شفافیت، محرمانگی، پاسخ‌گویی و روابط بلندمدت</strong> بنا شود. هر همکاری با توجه کامل به جزئیات و با احترام به قوانین و مقررات لازم‌الاجرای سلطنت عمان مدیریت می‌شود.</p>
 <p class="en">At Gulf Vision Horizon, we believe professional advisory services should be built on <strong>accuracy, transparency, confidentiality, responsiveness, and long-term relationships</strong>. Every engagement is handled with attention to detail and with respect for the applicable laws and regulations of the Sultanate of Oman.</p>
-<p class="fa">هدف ما ساده است: <strong>فعالیت تجاری در عمان را برای مشتریان خود روشن‌تر، امن‌تر و کارآمدتر کنیم.</strong></p>
-<p class="en">Our objective is simple: <strong>to make doing business in Oman clearer, safer, and more efficient for our clients.</strong></p>
-</details></div><aside class="about-side"><div class="about-card"><h3><span class="fa">چشم‌انداز ما</span><span class="en">Our Vision</span></h3><p><span class="fa">تبدیل‌شدن به یک شریک قابل اعتماد و ممتاز در خدمات شرکتی و مشاوره کسب‌وکار برای شرکت‌ها و سرمایه‌گذارانی که در عمان فعالیت خود را آغاز یا توسعه می‌دهند.</span><span class="en">To become a trusted premium corporate services and business advisory partner for companies and investors establishing and expanding their operations in Oman.</span></p></div><div class="about-card"><h3><span class="fa">ماموریت ما</span><span class="en">Our Mission</span></h3><p><span class="fa">ارائه راهکارهای شرکتی قابل اعتماد، عملی و باکیفیت تا مشتریان بتوانند بر رشد کسب‌وکار خود تمرکز کنند و ما در مسیر الزامات اداری، مقرراتی، مالی و عملیاتی بازار عمان از آن‌ها پشتیبانی کنیم.</span><span class="en">To provide reliable, practical, and high-quality corporate solutions that allow our clients to focus on growing their businesses while we support them in navigating the administrative, regulatory, financial, and operational requirements of the Omani market.</span></p></div><div class="about-card"><h3><span class="fa">ارزش‌های ما</span><span class="en">Our Values</span></h3><div class="values"><span><span class="fa">حرفه‌ای‌گری</span><span class="en">Professionalism</span></span><span><span class="fa">صداقت</span><span class="en">Integrity</span></span><span><span class="fa">محرمانگی</span><span class="en">Confidentiality</span></span><span><span class="fa">دقت</span><span class="en">Accuracy</span></span><span><span class="fa">پاسخ‌گویی</span><span class="en">Responsiveness</span></span><span><span class="fa">تخصص محلی</span><span class="en">Local Expertise</span></span><span><span class="fa">تعهد به مشتری</span><span class="en">Client Commitment</span></span></div></div></aside></div></div></section>
-<section class="section" id="contact"><div class="wrap"><div class="cta"><div><div class="eyebrow" style="color:#78d5cb"><span class="fa">کسب‌وکار شما، میز عمان ما</span><span class="en">Your Business. Our Oman Desk.</span></div><h2><span class="fa">گفت‌وگوی ورود به بازار عمان را شروع کنید</span><span class="en">Start your Oman market-entry conversation</span></h2><p><span class="fa">ثبت شرکت · سرمایه‌گذاری · بانک · مالیات · امور شرکتی · مهاجرت · ورود به بازار</span><span class="en">Company Formation · Investment · Banking · Tax · Corporate Care · Immigration · Market Entry</span></p></div><div class="actions" style="margin-top:0"><a class="btn btn-gold" href="mailto:info@GVHorizon.com?subject=Oman%20Corporate%20Services"><span class="fa">ایمیل</span><span class="en">Email Us</span></a><a class="btn btn-outline" target="_blank" rel="noopener" href="https://wa.me/96893881823">WhatsApp</a></div></div></div></section>
-</main><footer class="footer"><div class="wrap"><div class="footer-grid"><div><div class="brand"><span class="logo" style="border-color:#b98d3b"></span><span><strong>GULF VISION HORIZON</strong><small style="color:#93a5b7"><span class="fa">مشاوره ممتاز شرکتی · مسقط، سلطنت عمان</span><span class="en">Premium Corporate Advisory · Muscat, Sultanate of Oman</span></small></span></div></div><div><strong><span class="fa">تماس</span><span class="en">Contact</span></strong><br><a href="mailto:info@GVHorizon.com">info@GVHorizon.com</a><br><a href="tel:+96893881823">+968 93881823</a></div><div><strong><span class="fa">موقعیت</span><span class="en">Location</span></strong><br>Al Mouj, Muscat, Oman</div></div><div class="footnote"><span class="fa">تأیید حساب بانکی، ویزاها، مجوزها و فعالیت‌های رگوله‌شده تابع ارزیابی مستقل KYC، شرایط احراز و تصمیم نهاد مربوطه است. کاتالوگ محرمانه مشتریان · نسخه ۲۰۲۶.</span><span class="en">Bank-account approval, visas, permits and regulated licences remain subject to the relevant authority or institution’s independent KYC, eligibility and regulatory decisions. Confidential client catalogue · 2026 edition.</span></div></div></footer>
-<script>
-function setLang(lang){lang=lang==='en'?'en':'fa';document.documentElement.dataset.lang=lang;document.documentElement.lang=lang;document.documentElement.dir=lang==='fa'?'rtl':'ltr';for(const l of ['fa','en']){const b=document.getElementById(l+'Btn');b.classList.toggle('active',l===lang);b.setAttribute('aria-pressed',String(l===lang));}try{localStorage.setItem('gvhLang',lang)}catch{}document.querySelectorAll('[data-fa]').forEach(el=>{if(el.matches('input,textarea'))el.placeholder=el.dataset[lang];else el.textContent=el.dataset[lang];});if(window.updateContact)updateContact();if(window.clearValidation)clearValidation();if(window.renderStatus)renderStatus();}
-let saved='fa';try{saved=localStorage.getItem('gvhLang')||'fa'}catch{}setLang(saved);
-const toggle=document.querySelector('.menu-toggle'),menu=document.querySelector('.menu');function closeMenu(){menu.classList.remove('open');toggle.setAttribute('aria-expanded','false')}toggle.addEventListener('click',()=>{const open=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open))});menu.querySelectorAll('a,button').forEach(item=>item.addEventListener('click',closeMenu));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.classList.contains('open')){closeMenu();toggle.focus()}});document.addEventListener('click',e=>{if(!e.target.closest('.nav'))closeMenu()});new ResizeObserver(()=>{document.documentElement.style.scrollPaddingTop=(document.querySelector('.nav').offsetHeight+16)+'px'}).observe(document.querySelector('.nav'));</script>
+<p class="fa">هدف ما ساده است: <strong>فعالیت تجاری در عمان را برای مشتریان خود روشن‌تر، امن‌تر و کارآمدتر کنیم.</strong>
+</p>
+<p class="en">Our objective is simple: <strong>to make doing business in Oman clearer, safer, and more efficient for our clients.</strong>
+</p>
+</div>
+</div>
+<aside class="about-side">
+<div class="about-card">
+<h3><span class="fa">چشم‌انداز ما</span><span class="en">Our Vision</span>
+</h3>
+<p><span class="fa">تبدیل‌شدن به یک شریک قابل اعتماد و ممتاز در خدمات شرکتی و مشاوره کسب‌وکار برای شرکت‌ها و سرمایه‌گذارانی که در عمان فعالیت خود را آغاز یا توسعه می‌دهند.</span><span class="en">To become a trusted premium corporate services and business advisory partner for companies and investors establishing and expanding their operations in Oman.</span>
+</p>
+</div>
+<div class="about-card">
+<h3><span class="fa">ماموریت ما</span><span class="en">Our Mission</span>
+</h3>
+<p><span class="fa">ارائه راهکارهای شرکتی قابل اعتماد، عملی و باکیفیت تا مشتریان بتوانند بر رشد کسب‌وکار خود تمرکز کنند و ما در مسیر الزامات اداری، مقرراتی، مالی و عملیاتی بازار عمان از آن‌ها پشتیبانی کنیم.</span><span class="en">To provide reliable, practical, and high-quality corporate solutions that allow our clients to focus on growing their businesses while we support them in navigating the administrative, regulatory, financial, and operational requirements of the Omani market.</span>
+</p>
+</div>
+<div class="about-card">
+<h3><span class="fa">ارزش‌های ما</span><span class="en">Our Values</span>
+</h3>
+<div class="values"><span><span class="fa">حرفه‌ای‌گری</span><span class="en">Professionalism</span></span><span><span class="fa">صداقت</span><span class="en">Integrity</span></span><span><span class="fa">محرمانگی</span><span class="en">Confidentiality</span></span><span><span class="fa">دقت</span><span class="en">Accuracy</span></span><span><span class="fa">پاسخ‌گویی</span><span class="en">Responsiveness</span></span><span><span class="fa">تخصص محلی</span><span class="en">Local Expertise</span></span><span><span class="fa">تعهد به مشتری</span><span class="en">Client Commitment</span></span>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section class="section" id="contact">
+<div class="wrap">
+<div class="cta">
+<div>
+<div class="eyebrow" style="color:#78d5cb"><span class="fa">کسب‌وکار شما، میز عمان ما</span><span class="en">Your Business. Our Oman Desk.</span>
+</div>
+<h2><span class="fa">گفت‌وگوی ورود به بازار عمان را شروع کنید</span><span class="en">Start your Oman market-entry conversation</span>
+</h2>
+<p><span class="fa">ثبت شرکت · سرمایه‌گذاری · بانک · مالیات · امور شرکتی · مهاجرت · ورود به بازار</span><span class="en">Company Formation · Investment · Banking · Tax · Corporate Care · Immigration · Market Entry</span>
+</p>
+</div>
+<div class="actions" style="margin-top:0"><a class="btn email-cta" href="mailto:info@GVHorizon.com?subject=Oman%20Corporate%20Services"><span class="fa">ایمیل</span><span class="en">Email Us</span></a><a class="btn btn-outline" target="_blank" rel="noopener" href="https://wa.me/96893881823">WhatsApp</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="wrap">
+<div class="footer-grid">
+<div>
+<div class="brand"><span class="logo" style="border-color:#b98d3b"></span><span><strong>GULF VISION HORIZON</strong><small style="color:#93a5b7"><span class="fa">مشاوره ممتاز شرکتی · مسقط، سلطنت عمان</span><span class="en">Premium Corporate Advisory · Muscat, Sultanate of Oman</span></small></span>
+</div>
+</div>
+<div><strong><span class="fa">تماس</span><span class="en">Contact</span></strong><br><a href="mailto:info@GVHorizon.com">info@GVHorizon.com</a><br><a href="tel:+96893881823">+968 93881823</a>
+</div>
+<div><strong><span class="fa">موقعیت</span><span class="en">Location</span></strong><br>Al Mouj, Muscat, Oman</div>
+</div>
+<div class="footnote"><span class="fa">تأیید حساب بانکی، ویزاها، مجوزها و فعالیت‌های رگوله‌شده تابع ارزیابی مستقل KYC، شرایط احراز و تصمیم نهاد مربوطه است. کاتالوگ محرمانه مشتریان · نسخه ۲۰۲۶.</span><span class="en">Bank-account approval, visas, permits and regulated licences remain subject to the relevant authority or institution’s independent KYC, eligibility and regulatory decisions. Confidential client catalogue · 2026 edition.</span>
+</div>
+</div>
+</footer>
+<script src="assets/index.js" defer></script>
+<script src="assets/shared.js" defer></script>
 </body>
 </html>
 
