@@ -1,0 +1,64 @@
+/* Shared finishing rules: retain the existing navy, teal and gold palette. */
+:root { --action-hover: #116b64; --action-active: #0d5954; }
+html { scroll-padding-top: calc(var(--nav-height, 80px) + 16px); }
+html[data-lang="en"] p.en { display: block; }
+body { text-rendering: optimizeLegibility; }
+.section { padding-block: clamp(44px, 5vw, 72px); }
+.section h2, .hero h1 { text-wrap: balance; }
+.lead, .hero p { max-width: 70ch; }
+.about-grid { grid-template-columns: minmax(0, 1.5fr) minmax(290px, 1fr); }
+.about-copy { max-width: 75ch; }
+.values { grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); }
+.values > span { min-width: 0; }
+.values > span > span { min-width: 0; overflow-wrap: anywhere; }
+.card, .package, .about-card { transition: border-color .18s ease, box-shadow .18s ease; }
+.card:focus-within, .package:focus-within { border-color: var(--teal); }
+.package header { min-height: 0; }
+.package .package-audience { min-height: 7em; }
+.package .price { font-variant-numeric: tabular-nums; }
+.fee-row:last-child { border-bottom: 0; }
+.compare th { text-align: start; }
+.compare:focus-visible { outline-offset: -3px; }
+.btn, .submit { transition: background-color .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+.consultation-cta, .package-cta, .email-cta, .submit { background: var(--teal); border-color: var(--teal); color: #fff; }
+.consultation-cta:hover, .package-cta:hover, .email-cta:hover, .submit:hover { background: var(--action-hover); color: #fff; }
+.consultation-cta:active, .package-cta:active, .email-cta:active, .submit:active { background: var(--action-active); }
+.btn-outline:hover { background: var(--soft); border-color: var(--teal); }
+:focus-visible { outline: 3px solid var(--teal); outline-offset: 4px; }
+.cta :focus-visible, .footer :focus-visible, .info :focus-visible { outline-color: #fff; }
+input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+[aria-invalid="true"] { border-color: #9a3029; }
+.consent { flex-wrap: wrap; }
+.consent > span:not(.field-error) { flex: 1; min-width: 0; }
+.consent .field-error { flex-basis: 100%; }
+.grid { align-items: start; }
+.formbox, .info { min-width: 0; }
+.info .contact { direction: ltr; unicode-bidi: isolate; }
+.footer .logo { direction: ltr; }
+.nav .brand { flex-shrink: 0; }
+[tabindex="-1"]:focus:not(:focus-visible) { outline: none; }
+@media (hover: hover) {
+  .card:hover { border-color: #ccd6df; box-shadow: 0 14px 32px rgba(13,41,71,.08); }
+}
+@media (max-width: 1100px) {
+  .menu.open { max-height: calc(100dvh - 90px); overflow-y: auto; overscroll-behavior: contain; }
+  .menu a { min-height: 44px; }
+}
+@media (max-width: 960px) {
+  .about-grid { grid-template-columns: minmax(0, 1fr); }
+  .package .package-audience { min-height: 0; }
+}
+@media (max-width: 680px) {
+  .nav .brand { flex-shrink: 1; }
+  .hero h1 { font-size: clamp(1.8rem, 7vw, 2.4rem); line-height: 1.4; }
+  .section h2 { font-size: clamp(1.5rem, 6vw, 1.9rem); }
+  .package { padding: 22px; }
+  .actions .btn { flex: 1 1 130px; }
+  .cta { padding: 26px 22px; gap: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .btn:hover, .submit:hover { transform: none; }
+}
+
