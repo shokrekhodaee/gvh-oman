@@ -56,9 +56,43 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px
   .actions .btn { flex: 1 1 130px; }
   .cta { padding: 26px 22px; gap: 22px; }
 }
+/* Animate only opacity and transforms: content stays visible without JavaScript. */
+:root { --motion-fast: 180ms; --motion-enter: 320ms; --motion-ease: cubic-bezier(.2,.65,.3,1); }
+@keyframes gentle-enter {
+  from { opacity: .35; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes menu-enter {
+  from { opacity: .4; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.motion-enter { animation: gentle-enter var(--motion-enter) var(--motion-ease); }
+.card, .package, .about-card {
+  transition: transform var(--motion-fast) var(--motion-ease), border-color var(--motion-fast) ease, box-shadow var(--motion-fast) ease;
+}
+.menu a, .footer a, .service-link, summary, .lang button, .lang-switch button, .menu-toggle {
+  transition: color var(--motion-fast) ease, background-color var(--motion-fast) ease, border-color var(--motion-fast) ease, box-shadow var(--motion-fast) ease;
+}
+.service-link, .footer a { text-underline-offset: .22em; text-decoration-thickness: 1px; }
+.btn, .submit { line-height: 1.6; text-align: center; }
+.btn:active, .submit:not(:disabled):active { transform: translateY(1px); }
+.submit:disabled { transform: none; box-shadow: none; }
+summary { border-radius: 8px; }
+details[open] > :not(summary) { animation: gentle-enter 220ms var(--motion-ease); }
+.status.success, .status.error { animation: gentle-enter 220ms var(--motion-ease); }
+@media (hover: hover) and (pointer: fine) {
+  .card:hover, .package:hover { transform: translateY(-3px); }
+  .about-card:hover { border-color: #ccd6df; }
+  .footer a:hover { text-decoration: underline; }
+  .service-link:hover, summary:hover { color: var(--teal); }
+  .menu-toggle:hover { border-color: var(--teal); background: var(--soft); }
+}
+@media (max-width: 1100px) {
+  .menu.open { animation: menu-enter 200ms var(--motion-ease); }
+}
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
-  .btn:hover, .submit:hover { transform: none; }
+  .btn:hover, .btn:active, .submit:hover, .submit:active, .card:hover, .package:hover { transform: none; }
 }
 
