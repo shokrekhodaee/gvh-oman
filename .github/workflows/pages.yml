@@ -1,4 +1,5 @@
 # Publishes the reviewed website branch to GitHub Pages.
+# Release: 2026-09-08 subtle motion polish.
 name: Deploy static site to Pages
 
 on:
