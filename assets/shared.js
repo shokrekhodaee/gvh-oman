@@ -27,3 +27,27 @@ let saved = 'fa';
 try { saved = localStorage.getItem('gvhLang') || 'fa'; } catch {}
 setLang(saved);
 
+// Reveal each content group once; never hide content while waiting for an observer.
+// Groups avoid nested animations and remain accessible when focused or deep-linked.
+(() => {
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  if (reducedMotion.matches || !('IntersectionObserver' in window)) return;
+  const observer = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      observer.unobserve(entry.target);
+      if (reducedMotion.matches || entry.target.contains(document.activeElement)) continue;
+      entry.target.classList.add('motion-enter');
+      entry.target.addEventListener('animationend', () => {
+        entry.target.classList.remove('motion-enter');
+      }, { once: true });
+    }
+  }, { threshold: 0, rootMargin: '0px 0px -24px 0px' });
+  document.querySelectorAll('.section > .wrap, .formbox, .info').forEach(element => observer.observe(element));
+  reducedMotion.addEventListener('change', event => {
+    if (!event.matches) return;
+    observer.disconnect();
+    document.querySelectorAll('.motion-enter').forEach(element => element.classList.remove('motion-enter'));
+  });
+})();
+
